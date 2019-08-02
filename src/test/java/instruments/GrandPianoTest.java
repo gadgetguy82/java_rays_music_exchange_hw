@@ -43,4 +43,9 @@ public class GrandPianoTest {
   public void hasPianoType() {
     assertEquals("Grand", grandPiano.getPianoType());
   }
+
+  @Test
+  public void canPlay() {
+    assertEquals("Tap", grandPiano.play());
+  }
 }

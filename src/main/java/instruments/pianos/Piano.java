@@ -19,4 +19,8 @@ public abstract class Piano extends Instrument {
   public String getPianoType() {
     return this.pianoType;
   }
+
+  public String play() {
+    return "Tap";
+  }
 }

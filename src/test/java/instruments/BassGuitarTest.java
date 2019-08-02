@@ -43,4 +43,9 @@ public class BassGuitarTest {
   public void hasGuitarType() {
     assertEquals("Bass", bassGuitar.getGuitarType());
   }
+
+  @Test
+  public void canPlay() {
+    assertEquals("Strum", bassGuitar.play());
+  }
 }

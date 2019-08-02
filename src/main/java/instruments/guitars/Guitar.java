@@ -19,4 +19,8 @@ public abstract class Guitar extends Instrument {
   public String getGuitarType() {
     return this.guitarType;
   }
+
+  public String play() {
+    return "Strum";
+  }
 }

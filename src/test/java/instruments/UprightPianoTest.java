@@ -43,4 +43,9 @@ public class UprightPianoTest {
   public void hasPianoType() {
     assertEquals("Upright", uprightPiano.getPianoType());
   }
+
+  @Test
+  public void canPlay() {
+    assertEquals("Tap", uprightPiano.play());
+  }
 }
