@@ -2,7 +2,7 @@ package instruments.pianos;
 
 import instruments.Instrument;
 
-public class Piano extends Instrument {
+public abstract class Piano extends Instrument {
   private int noOfKeys;
   private String pianoType;
 
