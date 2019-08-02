@@ -48,4 +48,26 @@ public class GrandPianoTest {
   public void canPlay() {
     assertEquals("Tap", grandPiano.play());
   }
+
+  @Test
+  public void boughtPriceStartsAtZero() {
+    assertEquals(0, grandPiano.getBoughtPrice(), 0.01);
+  }
+
+  @Test
+  public void canSetBoughtPrice() {
+    grandPiano.setBoughtPrice(8200.00);
+    assertEquals(8200.00, grandPiano.getBoughtPrice(), 0.01);
+  }
+
+  @Test
+  public void sellingPriceStartsAtZero() {
+    assertEquals(0, grandPiano.getSellingPrice(), 0.01);
+  }
+
+  @Test
+  public void canSetSellingPrice() {
+    grandPiano.setSellingPrice(9399.00);
+    assertEquals(9399.00, grandPiano.getSellingPrice(), 0.01);
+  }
 }

@@ -48,4 +48,26 @@ public class UprightPianoTest {
   public void canPlay() {
     assertEquals("Tap", uprightPiano.play());
   }
+
+  @Test
+  public void boughtPriceStartsAtZero() {
+    assertEquals(0, uprightPiano.getBoughtPrice(), 0.01);
+  }
+
+  @Test
+  public void canSetBoughtPrice() {
+    uprightPiano.setBoughtPrice(3500.00);
+    assertEquals(3500.00, uprightPiano.getBoughtPrice(), 0.01);
+  }
+
+  @Test
+  public void sellingPriceStartsAtZero() {
+    assertEquals(0, uprightPiano.getSellingPrice(), 0.01);
+  }
+
+  @Test
+  public void canSetSellingPrice() {
+    uprightPiano.setSellingPrice(4684.00);
+    assertEquals(4684.00, uprightPiano.getSellingPrice(), 0.01);
+  }
 }
