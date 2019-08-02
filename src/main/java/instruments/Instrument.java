@@ -1,12 +1,14 @@
 package instruments;
 
 import behaviours.*;
+import enums.Type;
 
 public abstract class Instrument implements IPlay, ISell {
-  private String name, type, colour, material;
+  private String name, colour, material;
   private double boughtPrice, sellingPrice;
+  private Type type;
 
-  public Instrument(String name, String type, String colour, String material) {
+  public Instrument(String name, Type type, String colour, String material) {
     this.name = name;
     this.type = type;
     this.colour = colour;
@@ -19,7 +21,7 @@ public abstract class Instrument implements IPlay, ISell {
     return this.name;
   }
 
-  public String getType() {
+  public Type getType() {
     return this.type;
   }
 

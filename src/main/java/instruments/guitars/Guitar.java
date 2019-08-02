@@ -1,5 +1,6 @@
 package instruments.guitars;
 
+import enums.Type;
 import instruments.Instrument;
 
 public abstract class Guitar extends Instrument {
@@ -7,7 +8,7 @@ public abstract class Guitar extends Instrument {
   private String guitarType;
 
   public Guitar(String name, String colour, String material, int noOfStrings, String guitarType) {
-    super(name, "String", colour, material);
+    super(name, Type.STRING, colour, material);
     this.noOfStrings = noOfStrings;
     this.guitarType = guitarType;
   }

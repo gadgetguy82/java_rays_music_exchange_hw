@@ -1,5 +1,6 @@
 package instruments.pianos;
 
+import enums.Type;
 import instruments.Instrument;
 
 public abstract class Piano extends Instrument {
@@ -7,7 +8,7 @@ public abstract class Piano extends Instrument {
   private String pianoType;
 
   public Piano(String name, String colour, String material, int noOfKeys, String pianoType) {
-    super(name,"Chordophone", colour, material);
+    super(name, Type.CHORDOPHONE, colour, material);
     this.noOfKeys = noOfKeys;
     this.pianoType = pianoType;
   }

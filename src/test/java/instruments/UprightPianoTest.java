@@ -1,5 +1,6 @@
 package instruments;
 
+import enums.Type;
 import instruments.pianos.UprightPiano;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,7 +22,7 @@ public class UprightPianoTest {
 
   @Test
   public void hasType() {
-    assertEquals("Chordophone", uprightPiano.getType());
+    assertEquals(Type.CHORDOPHONE, uprightPiano.getType());
   }
 
   @Test
