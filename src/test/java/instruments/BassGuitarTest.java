@@ -10,7 +10,7 @@ public class BassGuitarTest {
 
   @Before
   public void setUp() {
-    bassGuitar = new BassGuitar("Red");
+    bassGuitar = new BassGuitar("Red", "Basswood");
   }
 
   @Test
@@ -26,5 +26,10 @@ public class BassGuitarTest {
   @Test
   public void hasColour() {
     assertEquals("Red", bassGuitar.getColour());
+  }
+
+  @Test
+  public void hasMaterial() {
+    assertEquals("Basswood", bassGuitar.getMaterial());
   }
 }
