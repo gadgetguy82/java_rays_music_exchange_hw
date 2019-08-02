@@ -8,9 +8,18 @@ public class Shop {
 
   public Shop(String name) {
     this.name = name;
+    this.stock = new ArrayList<ISell>();
   }
 
   public String getName() {
     return this.name;
+  }
+
+  public int stockCount() {
+    return stock.size();
+  }
+
+  public void addStock(ISell item) {
+    this.stock.add(item);
   }
 }
