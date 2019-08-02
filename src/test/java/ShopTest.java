@@ -49,8 +49,10 @@ public class ShopTest {
 
   @Test
   public void canCalculateTotalPotentialProfit() {
+    bassGuitar.setBoughtPrice(60.99);
+    bassGuitar.setSellingPrice(89.99);
     shop.addStock(bassGuitar);
     shop.addStock(guitarString);
-    assertEquals(0.0, shop.totalPotentialProfit(), 0.01);
+    assertEquals(34.99, shop.totalPotentialProfit(), 0.01);
   }
 }

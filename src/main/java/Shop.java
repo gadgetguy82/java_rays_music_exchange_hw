@@ -28,6 +28,10 @@ public class Shop {
   }
 
   public double totalPotentialProfit() {
-    return 0.0;
+    double total = 0.0;
+    for (ISell item : this.stock) {
+      total += item.calculateMarkup();
+    }
+    return total;
   }
 }
