@@ -26,4 +26,8 @@ public class Shop {
   public void removeStock(ISell item) {
     this.stock.remove(item);
   }
+
+  public double totalPotentialProfit() {
+    return 0.0;
+  }
 }
