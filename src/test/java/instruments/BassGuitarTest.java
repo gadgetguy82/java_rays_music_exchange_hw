@@ -70,4 +70,11 @@ public class BassGuitarTest {
     bassGuitar.setSellingPrice(89.99);
     assertEquals(89.99, bassGuitar.getSellingPrice(), 0.01);
   }
+
+  @Test
+  public void canCalculateMarkup() {
+    bassGuitar.setBoughtPrice(60.00);
+    bassGuitar.setSellingPrice(89.99);
+    assertEquals(50.0, bassGuitar.calculateMarkup(), 0.01);
+  }
 }

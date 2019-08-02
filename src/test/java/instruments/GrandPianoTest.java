@@ -70,4 +70,11 @@ public class GrandPianoTest {
     grandPiano.setSellingPrice(9399.00);
     assertEquals(9399.00, grandPiano.getSellingPrice(), 0.01);
   }
+
+  @Test
+  public void canCalculateMarkup() {
+    grandPiano.setBoughtPrice(8200.00);
+    grandPiano.setSellingPrice(9399.00);
+    assertEquals(15.0, grandPiano.calculateMarkup(), 0.01);
+  }
 }

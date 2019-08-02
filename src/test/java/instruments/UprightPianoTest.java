@@ -70,4 +70,11 @@ public class UprightPianoTest {
     uprightPiano.setSellingPrice(4684.00);
     assertEquals(4684.00, uprightPiano.getSellingPrice(), 0.01);
   }
+
+  @Test
+  public void canCalculateMarkup() {
+    uprightPiano.setBoughtPrice(3500.00);
+    uprightPiano.setSellingPrice(4684.00);
+    assertEquals(34.0, uprightPiano.calculateMarkup(), 0.01);
+  }
 }
