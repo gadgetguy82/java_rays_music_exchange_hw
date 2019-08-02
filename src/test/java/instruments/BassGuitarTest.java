@@ -1,5 +1,6 @@
 package instruments;
 
+import instruments.guitars.BassGuitar;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,17 +11,17 @@ public class BassGuitarTest {
 
   @Before
   public void setUp() {
-    bassGuitar = new BassGuitar("Red", "Basswood", 4);
+    bassGuitar = new BassGuitar("Fender","Red", "Basswood", 4);
   }
 
   @Test
   public void hasName() {
-    assertEquals("Bass Guitar", bassGuitar.getName());
+    assertEquals("Fender", bassGuitar.getName());
   }
 
   @Test
   public void hasType() {
-    assertEquals("Guitar", bassGuitar.getType());
+    assertEquals("String", bassGuitar.getType());
   }
 
   @Test

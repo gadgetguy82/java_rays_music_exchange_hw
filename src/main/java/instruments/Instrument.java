@@ -1,6 +1,6 @@
 package instruments;
 
-public class Instrument {
+public abstract class Instrument {
   private String name, type, colour, material;
 
   public Instrument(String name, String type, String colour, String material) {

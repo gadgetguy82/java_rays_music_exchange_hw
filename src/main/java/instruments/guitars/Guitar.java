@@ -1,11 +1,13 @@
-package instruments;
+package instruments.guitars;
 
-public class Guitar extends Instrument {
+import instruments.Instrument;
+
+public abstract class Guitar extends Instrument {
   private int noOfStrings;
   private String guitarType;
 
   public Guitar(String name, String colour, String material, int noOfStrings, String guitarType) {
-    super(name, "Guitar", colour, material);
+    super(name, "String", colour, material);
     this.noOfStrings = noOfStrings;
     this.guitarType = guitarType;
   }
