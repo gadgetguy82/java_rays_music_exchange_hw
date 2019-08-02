@@ -1,6 +1,8 @@
 package accessories;
 
-public abstract class Accessory {
+import behaviours.ISell;
+
+public abstract class Accessory implements ISell {
   private String description;
   private double boughtPrice, sellingPrice;
 
@@ -28,5 +30,9 @@ public abstract class Accessory {
 
   public void setSellingPrice(double sellingPrice) {
     this.sellingPrice = sellingPrice;
+  }
+
+  public double calculateMarkup() {
+    return Math.round((this.sellingPrice - this.boughtPrice) / this.boughtPrice * 100) * 100 / 100;
   }
 }
